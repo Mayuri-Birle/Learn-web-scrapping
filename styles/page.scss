@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+$primary: #74b9ff;
+$black: #36312e;
+$white: white;
+$gray: gray;
+
+$light-purple: #f8f1ff;
+$light-blue: #E0FFFF;
+$light-brown: #f8f1ff;
+
+
+//Componets
+.button {
+	padding: 1.2rem;
+
+	&.white {
+		background: $white;
+		color: black;
+	}
+
+	&.black {
+		background: $black;
+		color: white;
+	}
+
+	&.primary {
+		background: $primary;
+	}
+}
+
+.light-blue {
+	background: $light-blue;
+}
+
+.light-purple {
+	background: $light-purple;
+}
+
+.light-brown {
+	background: $light-brown;
+}
+
+.primary {
+	background: $primary;
+}
+
+.secondary {
+	background: $black;
+}
+
+
+.card {
+	height: 250px;
+	width: 150px;
+}
+
+button {
+	width: 10%;
+	border: none;
+	color: white;
+	font-size: large;
+}
+
+//Sections
+.header {
+	background: #f0e6e2;
+
+	.nav {
+		display: flex;
+		justify-content: space-between;
+		padding: 2.8rem 2rem;
+		// margin: 1rem 2rem;
+		// font-size: 1.2rem;
+
+		.logo {
+			&._title {
+				font-size: 2rem;
+			}
+		}
+
+		.navbar {
+			list-style: none;
+			display: flex;
+			font-size: 1rem;
+
+			.nav-element {
+				padding-right: 2rem;
+
+				&:last-of-type {
+					padding-right: 0;
+				}
+
+				a {
+					text-decoration: none;
+					// color: gray;
+				}
+
+				.link {
+					color: $gray;
+				}
+			}
+		}
+	}
+
+	.hero {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 2rem;
+
+		&_title {
+			font-size: 4rem;
+		}
+
+	}
+
+	.action_container {
+		display: flex;
+		padding: 2rem 0;
+
+		.partner_container {
+			display: flex;
+			// width: 400px;
+			padding: 0 2rem;
+			flex: 1;
+
+			.partner {
+				width: 100px;
+				padding-right: 2rem;
+
+				&:last-of-type {
+					margin-right: 0;
+				}
+			}
+		}
+
+		.search_container {
+			display: flex;
+			flex: 0.5;
+			justify-content: flex-end;
+
+		}
+	}
+}
+
+
+.companies {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 2rem 4rem;
+
+	.company {
+		// padding-right: 2rem;
+		width: 100px;
+		opacity: 0.8;
+
+	}
+}
+
+.explore {
+	padding: 3rem;
+
+	&_header {
+		padding: 2rem 0;
+	}
+
+	&_title {
+		font-size: 3rem;
+	}
+
+	&_cards {
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+
+		.cards_container {
+			margin-right: 2rem;
+			margin-left: 2rem;
+		}
+
+		.card {
+			width: 250px;
+			height: 250px;
+			font-size: 1rem;
+			font-weight: 600;
+			padding: 1rem 2rem;
+
+			.category {
+				width: 40px;
+				padding-top: 2.7rem;
+				padding-bottom: 1rem;
+			}
+		}
+
+
+	}
+
+	&_para {
+		font-weight: 400;
+		font-size: 0.8rem;
+	}
+
+}
+
+.job {
+	padding: 3rem;
+
+	.no_of_jobs {
+		color: $primary;
+	}
+
+	&_header {
+		padding: 2rem 0;
+	}
+
+	&_title {
+		font-size: 3rem;
+	}
+
+
+
+	&_cards {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+
+
+
+		.cards_container {
+			margin: 1rem;
+			background: $white;
+		}
+
+		.card {
+			width: 350px;
+			height: 280px;
+			font-size: 1.5rem;
+			font-weight: 500;
+			padding: 1rem 2rem;
+
+
+
+			hr {
+				color: gray;
+				opacity: 0.5;
+			}
+
+			.kahoot_logo {
+				margin-top: 0.5rem;
+				margin-right: 12rem;
+				border-radius: 50%;
+				width: 30px;
+				height: 30px;
+			}
+
+
+
+			.days {
+
+				font-size: 0.8rem;
+				color: gray;
+			}
+		}
+
+
+	}
+
+	&_para {
+		font-weight: 400;
+		font-size: 0.8rem;
+	}
+
+}
+
+.job_location {
+	font-size: 0.7rem;
+	padding-top: 0.5rem;
+	padding-bottom: 3rem;
+	color: $gray;
+}
+
+.map {
+	width: 15px;
+	height: 15px;
+	// padding-right: 2rem;
+}
+
+.clock {
+	margin-left: 2rem;
+	width: 25px;
+	height: 15px;
+}
+
+.envt {
+	padding: 2rem;
+
+
+	&_cards {
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+
+		.cards_container {
+			// margin-right: 2rem;
+			margin-left: 2rem;
+		}
+	}
+
+	&_company {
+		width: 700px;
+		height: 1000px;
+		background: $white;
+		padding: 2rem;
+	}
+
+	&_header {
+		padding: 2rem 0;
+	}
+
+	&_title {
+		font-size: 3rem;
+	}
+
+	&_companies {
+		display: flex;
+		padding: 1rem;
+		margin-left: 3rem;
+		margin-right: 3rem;
+		font-size: 2rem;
+	}
+
+	.company_info {
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		margin-left: 3rem;
+
+		.company_topic {
+			margin-left: 30px;
+
+			.company_desc {
+				font-size: 1rem;
+			}
+		}
+
+
+
+	}
+
+	.company_logo {
+		border-radius: 50%;
+		width: 80px;
+		height: 80px;
+	}
+}
+
+.search {
+	width: 70vw;
+	height: 500px;
+	background: #212121;
+	margin: 4rem 13rem;
+
+	&_header {
+		padding-top: 3rem;
+		padding-right: 4rem;
+		padding-left: 4rem;
+	}
+
+	&_title {
+		font-size: 4rem;
+		font-weight: 400;
+		color: white;
+	}
+
+	&_bar {
+		padding: 50px 400px;
+		display: flex;
+		flex: 2;
+	}
+
+}
+
+.footer {
+	background: #f0e6e2;
+
+	.nav {
+		display: flex;
+		justify-content: space-between;
+		padding: 2.8rem 2rem;
+		// margin: 1rem 2rem;
+		// font-size: 1.2rem;
+
+		.logo {
+			&._title {
+				font-size: 1.4rem;
+			}
+		}
+
+		.navbar {
+			list-style: none;
+			display: flex;
+			font-size: 1rem;
+
+			.nav-element {
+				padding-right: 2rem;
+
+				&:last-of-type {
+					padding-right: 0;
+				}
+
+				a {
+					text-decoration: none;
+					// color: gray;
+				}
+
+				.link {
+					color: $gray;
+				}
+			}
+		}
+	}
+
+}

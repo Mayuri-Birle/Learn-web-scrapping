@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-merriweather: 'Merriweather', times-new-roman;
+}
+
+.font-merriweather {
+  font: normal 400 18px var(--font-merriweather);
+}
+
+body {
+  font-size: 10px;
+  background: #ffebee;
+  font-family: 'Merriweather', 'San-Serif';
+}
+
+/*# sourceMappingURL=main.css.map */
